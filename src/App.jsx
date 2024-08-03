@@ -5,6 +5,8 @@ import Dashboard from './Dashboard'
 import CCgenerate from './CCgenerate'
 import Trading from './Trading';
 import Homepage from './Homepage';
+import './output.css';
+
 function App() {
 
 
