@@ -12,7 +12,7 @@ function App() {
     <section class="">
       <div >
 
-        <Router>
+        
           <Appbar />
           <Routes>
             <Route path={"/"} element={<Homepage />} />
@@ -20,7 +20,7 @@ function App() {
             <Route path={"/dashboard"} element={<Dashboard />} />
             <Route path={"/trading"} element={<Trading />} />
           </Routes>
-        </Router>
+        
       </div>
     </section>
 
