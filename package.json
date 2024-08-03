@@ -1,17 +1,14 @@
 {
   "name": "carbon-credit",
-  "homepage": "https://RyuvicSirville.github.io/CarbonCreditTracker/",
+  
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "build:css": "postcss src/styles.css -o src/output.css"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emotion/react": "^11.13.0",

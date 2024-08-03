@@ -5,7 +5,6 @@ import Dashboard from './Dashboard'
 import CCgenerate from './CCgenerate'
 import Trading from './Trading';
 import Homepage from './Homepage';
-import './output.css';
 
 function App() {
 
@@ -14,7 +13,7 @@ function App() {
     <section class="">
       <div >
 
-        
+        <Router>
           <Appbar />
           <Routes>
             <Route path={"/"} element={<Homepage />} />
@@ -22,7 +21,9 @@ function App() {
             <Route path={"/dashboard"} element={<Dashboard />} />
             <Route path={"/trading"} element={<Trading />} />
           </Routes>
-        
+        </Router>
+
+
       </div>
     </section>
 
