@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { useNavigate } from "react-router-dom";
-
+import logo from '/img/carbon-credit-icon-for-graphic-design-logo-website-social-media-mobile-app-ui-illustration-png.webp'
 const pages = ['Dashboard', 'Generate', 'Tracking'];
 const settings = ['Profile', 'Account', 'SignUp', 'Logout'];
 
@@ -38,16 +38,17 @@ function Appbar() {
   };
 
   return (
-    <AppBar class="backdrop-blur-lg	" position="static" style={{ background: 'transparent', boxShadow: 'none' }}>
+    <div class="lg:px-20 md:px-10   ">
+      <AppBar class="backdrop-blur-lg	" position="static" style={{ background: 'transparent', boxShadow: 'none' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <img sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }}
-            src="https://static.vecteezy.com/system/resources/previews/031/757/668/large_2x/carbon-credit-icon-for-graphic-design-logo-website-social-media-mobile-app-ui-illustration-png.png"
+            src={logo}
             alt="logo"
             style={{ display: { xs: 'none', md: 'flex' }, marginRight: '1rem', height: '40px' }}
           />
           <Typography 
-            variant="h6"
+            variant="h5"
             noWrap
             component="a"
             onClick={() => { navigate("/") }}
@@ -111,7 +112,7 @@ function Appbar() {
           Box>
 
           <Typography
-            variant="h5"
+            variant="h8"
             noWrap
             component="a"
             onClick={() => { navigate("/") }}
@@ -186,6 +187,8 @@ function Appbar() {
         </Toolbar>
       </Container>
     </AppBar>
+    </div>
+    
   )
 }
 export default Appbar;
