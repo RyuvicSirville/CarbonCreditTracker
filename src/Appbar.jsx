@@ -38,7 +38,7 @@ function Appbar() {
   };
 
   return (
-    <AppBar class="backdrop-blur-xl" position="static" style={{ background: 'transparent', boxShadow: 'none' }}>
+    <AppBar class="backdrop-blur-lg	" position="static" style={{ background: 'transparent', boxShadow: 'none' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <img sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }}

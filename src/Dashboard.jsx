@@ -4,11 +4,11 @@ import Tracking from './Tracking'
 import Contact from './Contact';
 export default function Dashboard() {
     return (
-        <div>
+        <div class='	'>
             <p class=" py-10 px-20 text-4xl md:text-5xl xl:text-7xl font-semi--bold text-white" style={{ display: "flex", textAlign: "center" }}>User Dashboard</p>
             <div class='grid grid-cols-1  sm:grid-cols-1 md:grid-cols-1  lg:grid-cols-2   gap-10 px-20 w-screen mx-auto' >
             <div class=' justify-self-center'>
-                <div class="shadow-2xl">
+                <div class="shadow-2xl backdrop-blur	">
                     <table class="border-separate border-spacing-2 border border-slate-500 ">
                         <thead>
                             <tr >
@@ -38,7 +38,7 @@ export default function Dashboard() {
                 </div>
 
             </div>
-            <div class=' justify-self-center '>
+            <div class=' justify-self-center 	'>
 
                 <PieChart 
                     series={[
